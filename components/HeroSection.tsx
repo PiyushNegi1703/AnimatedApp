@@ -19,7 +19,7 @@ const HeroSection = () => {
       <div className={styles.heroText}>
         <span>Ahead app</span>
         <h1>
-          Master your life by <br /> mastering emotions
+          Master your life <br /> by mastering <br /> emotions
         </h1>
       </div>
 
