@@ -4,6 +4,7 @@ import EqIq from "@/components/EqIq";
 import HeroSection from "@/components/HeroSection";
 import MeetAhead from "@/components/MeetAhead";
 import Navbar from "@/components/Navbar";
+import SelfImprovement from "@/components/SelfImprovement";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <EqIq />
       <Carousel />
       <MeetAhead />
+      <SelfImprovement />
     </main>
   );
 }

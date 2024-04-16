@@ -77,7 +77,7 @@ const Carousel = () => {
     target: carouselRef,
   });
 
-  const scroll = useTransform(scrollYProgress, [1, 0], ["-10%", "100%"]);
+  const scroll = useTransform(scrollYProgress, [1, 0], ["-100%", "100%"]);
 
   return (
     <ScrollAnimation

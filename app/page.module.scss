@@ -94,14 +94,16 @@
                 position: absolute;
                 background-color: red;
             }
-            
+
             .sticker1 {
                 top: -30px;
             }
+
             .sticker2 {
                 bottom: 150px;
                 right: 0;
             }
+
             .sticker3 {
                 bottom: 150px;
                 left: 0;
@@ -149,7 +151,8 @@
         font-size: 2em;
     }
 
-    .para1, .para2 {
+    .para1,
+    .para2 {
         font-size: 1.5em;
         line-height: 1.5;
     }
@@ -163,7 +166,7 @@
     height: 50vh;
     width: 100%;
     position: relative;
-    
+
     h1 {
         text-align: start;
         font-size: 3em;
@@ -248,21 +251,80 @@
 
         .heading {
             width: 100%;
+
             h1 {
                 font-size: 4em;
             }
-            
+
             p {
                 font-size: 1.5em;
                 line-height: 1.5;
             }
         }
     }
-        
+
     .right {
         width: 40%;
         position: relative;
         font-size: 1.5em;
         line-height: 2;
+    }
+}
+
+// Self Improvement Section Styles
+.selfImprovementContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10vh 5%;
+
+    .textContainer {
+        align-self: flex-start;
+
+        h1 {
+            font-size: 3em;
+        }
+
+        span {
+            font-size: 1.2em;
+        }
+    }
+
+    .timelineWrapper {
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        position: relative;
+
+        .timelineContainer {
+            height: 150px;
+            width: 50%;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            .timeline {
+                width: 10px;
+                height: 115%;
+                background-color: #bc98ff;
+                margin-right: 10px;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background-color: #bc98ff;
+                    position: absolute;
+                    top: 50%;
+                    left: -5px;
+                    transform: translateY(-50%);
+                }
+            }
+        }
     }
 }
