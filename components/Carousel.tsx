@@ -15,7 +15,7 @@ import {
 const carouselItems = [
   {
     id: 1,
-    emoji: 0x1f600,
+    emoji: "🙂",
     title: "You are not alone",
     description:
       "We have all been there. The feeling of being overwhelmed, anxious, and stressed. The feeling of not being able to cope with the demands of life.",
@@ -23,7 +23,7 @@ const carouselItems = [
   },
   {
     id: 2,
-    emoji: 0x1f600,
+    emoji: "🙂",
     title: "We are here to help",
     description:
       "Our app is designed to help you understand and manage your emotions. We provide you with the tools to help you navigate through life's ups and downs.",
@@ -31,7 +31,7 @@ const carouselItems = [
   },
   {
     id: 3,
-    emoji: 0x1f600,
+    emoji: "🙂",
     title: "Join us",
     description:
       "Join us on this journey of self-discovery and growth. Master your emotions and master your life.",
@@ -39,7 +39,7 @@ const carouselItems = [
   },
   {
     id: 4,
-    emoji: 0x1f600,
+    emoji: "🙂",
     title: "Sign up now",
     description:
       "Sign up now and get access to our full library of resources. Let's embark on this journey together.",
@@ -47,7 +47,7 @@ const carouselItems = [
   },
   {
     id: 5,
-    emoji: 0x1f600,
+    emoji: "🙂",
     title: "Start your journey",
     description:
       "Start your journey to a happier, healthier, and more fulfilling life. Sign up now and get access to our full library of resources.",
@@ -55,7 +55,7 @@ const carouselItems = [
   },
   {
     id: 6,
-    emoji: 0x1f600,
+    emoji: "🙂",
     title: "You are not alone",
     description:
       "We have all been there. The feeling of being overwhelmed, anxious, and stressed. The feeling of not being able to cope with the demands of life.",
@@ -63,7 +63,7 @@ const carouselItems = [
   },
   {
     id: 7,
-    emoji: 0x1f600,
+    emoji: "🙂",
     title: "We are here to help",
     description:
       "Our app is designed to help you understand and manage your emotions. We provide you with the tools to help you navigate through life's ups and downs.",
@@ -73,12 +73,11 @@ const carouselItems = [
 
 const Carousel = () => {
   const carouselRef = useRef(null);
-  //   const inView = useInView(carouselRef, { once: true });
   const { scrollYProgress } = useScroll({
     target: carouselRef,
   });
 
-  const scroll = useTransform(scrollYProgress, [1, 0], ["-200%", "200%"]);
+  const scroll = useTransform(scrollYProgress, [1, 0], ["-10%", "100%"]);
 
   return (
     <ScrollAnimation
@@ -100,7 +99,7 @@ const Carousel = () => {
             whileHover={{ scale: 1.05 }}
             style={{ backgroundColor: item.color }}
           >
-            <p>{String.fromCodePoint(item.emoji)}</p>
+            <p>{item.emoji}</p>
             <h2>{item.title}</h2>
             <p>{item.description}</p>
           </motion.div>

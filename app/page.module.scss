@@ -178,7 +178,6 @@
         padding: 50px 10px;
         position: absolute;
         top: 50px;
-        left: -500px;
 
         .carouselItem {
             flex-basis: 20%;
@@ -201,5 +200,69 @@
                 line-height: 1.5;
             }
         }
+    }
+}
+
+// Meet Ahead Section Styles
+.meetaheadContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+    padding: 10vh 5%;
+    background-color: #fef7fe;
+    width: 95%;
+    border-radius: 50px;
+    overflow: hidden;
+
+    .left {
+        position: relative;
+        height: 100%;
+
+        .imageContainer {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -20%);
+            border-radius: 50%;
+            width: 35vh;
+            height: 35vh;
+            z-index: 1000;
+            background-color: #fef7fe;
+            filter: blur(5px);
+        }
+
+        .circleContainer {
+            height: 65%;
+
+            .circle {
+                width: 40vh;
+                height: 40vh;
+                border-radius: 50%;
+                background-color: #f8e8dc;
+                position: absolute;
+                top: 100%;
+                bottom: 0;
+            }
+        }
+
+        .heading {
+            width: 100%;
+            h1 {
+                font-size: 4em;
+            }
+            
+            p {
+                font-size: 1.5em;
+                line-height: 1.5;
+            }
+        }
+    }
+        
+    .right {
+        width: 40%;
+        position: relative;
+        font-size: 1.5em;
+        line-height: 2;
     }
 }
