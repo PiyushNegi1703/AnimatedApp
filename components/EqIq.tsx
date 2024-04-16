@@ -2,7 +2,7 @@
 
 import React from "react";
 import styles from "@/app/page.module.scss";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import ScrollAnimation from "@/ScrollAnimation";
 
 const EqIq = () => {

@@ -1,4 +1,5 @@
 import styles from "@/app/page.module.scss";
+import Carousel from "@/components/Carousel";
 import EqIq from "@/components/EqIq";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
@@ -9,6 +10,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <EqIq />
+      <Carousel />
     </main>
   );
 }
