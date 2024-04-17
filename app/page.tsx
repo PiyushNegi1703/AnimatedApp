@@ -1,6 +1,7 @@
 import styles from "@/app/page.module.scss";
 import Carousel from "@/components/Carousel";
 import EqIq from "@/components/EqIq";
+import ExplainSection from "@/components/ExplainSection";
 import HeroSection from "@/components/HeroSection";
 import MeetAhead from "@/components/MeetAhead";
 import Navbar from "@/components/Navbar";
@@ -15,6 +16,7 @@ export default function Home() {
       <Carousel />
       <MeetAhead />
       <SelfImprovement />
+      <ExplainSection />
     </main>
   );
 }

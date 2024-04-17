@@ -328,3 +328,103 @@
         }
     }
 }
+
+// Explain Section Styles
+.explainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #deedff;
+    height: 70vh;
+    border-radius: 50px;
+    width: 95%;
+
+    .sunTimeline {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .dotted {
+            border-bottom: 2px dashed orange;
+            width: 70%;
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .sunContainer {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-weight: 500;
+            gap: 10px;
+            
+            .sun {
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                background-color: orange;
+                border: 5px solid #deedff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                z-index: 1;
+            }
+        }
+    }
+
+    .peopleTimeline {
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        position: relative;
+
+        .cont {
+            position: relative;
+            top: -70%;
+        }
+
+        .line {
+            width: 80%;
+            height: 2px;
+            background-color: grey;
+            position: absolute;
+            top: 15%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+        }
+
+        .peopleContainer {
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: center;
+            font-weight: 500;
+            gap: 10px;
+
+            .circle {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: orange;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                z-index: 1;
+            }
+
+            p {
+                color: white;
+                padding: 10px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
