@@ -4,6 +4,8 @@ import ScrollAnimation from "@/ScrollAnimation";
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "@/app/page.module.scss";
+import Image from "next/image";
+import ghost from "@/public/ghost2.png";
 
 const MeetAhead = () => {
   return (
@@ -19,9 +21,9 @@ const MeetAhead = () => {
           <span>Built out of frustation</span>
           <h1>Meet the ahead app</h1>
         </motion.div>
-        <motion.div
-          className={styles.imageContainer}
-        ></motion.div>
+        <motion.div className={styles.imageContainer}>
+          <Image src={ghost} alt="ghost" width={150} />{" "}
+        </motion.div>
         <ScrollAnimation
           variants={{
             hidden: { x: 150, y: 0 },

@@ -68,6 +68,15 @@
     background-color: #eeebfe;
     border-radius: 50px;
 
+    .btn {
+        all: unset;
+        background-color: black;
+        color: white;
+        padding: 20px 40px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
     .heroText {
         h1 {
             font-size: 5em;
@@ -92,7 +101,6 @@
                 width: 50px;
                 height: 50px;
                 position: absolute;
-                background-color: red;
             }
 
             .sticker1 {
@@ -232,7 +240,9 @@
             height: 35vh;
             z-index: 1000;
             background-color: #fef7fe;
-            filter: blur(5px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .circleContainer {
@@ -425,6 +435,60 @@
                 padding: 10px;
                 border-radius: 10px;
             }
+        }
+    }
+}
+
+// Open Vacancies Section Styles
+.cardContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 50px 0;
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .card {
+        width: 30%;
+        height: 20vh;
+        padding: 40px 60px;
+        border-radius: 20px;
+        background-color: #f8e8dc;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        overflow: hidden;
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        ul {
+            margin-left: 20px;
+
+            li {
+                font-size: 1.1em;
+                line-height: 1.5;
+            }
+        }
+
+        .btn {
+            all: unset;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            position: absolute;
+            top: 200px;
+        }
+
+        &:hover {
+            height: 30vh;
         }
     }
 }

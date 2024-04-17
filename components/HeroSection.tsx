@@ -5,6 +5,9 @@ import { motion } from "framer-motion";
 import styles from "@/app/page.module.scss";
 import Image from "next/image";
 import mobile from "@/public/Mobile.png";
+import ghost1 from "@/public/ghost1.png";
+import ghost2 from "@/public/ghost2.png";
+import ghost3 from "@/public/ghost3.png";
 
 const HeroSection = () => {
   return (
@@ -21,6 +24,7 @@ const HeroSection = () => {
         <h1>
           Master your life <br /> by mastering <br /> emotions
         </h1>
+        <motion.button className={styles.btn} whileHover={{ scale: 1.05 }}>Get App</motion.button>
       </div>
 
       <motion.div
@@ -37,9 +41,15 @@ const HeroSection = () => {
             transition: { duration: 2, delay: 0.5 },
           }}
         >
-          <div className={styles.sticker1}></div>
-          <div className={styles.sticker2}></div>
-          <div className={styles.sticker3}></div>
+          <motion.div animate={{ rotate: [0, 100] }} className={styles.sticker1}>
+            <Image src={ghost1} alt="ghost" width={70} />
+          </motion.div>
+          <motion.div animate={{ rotate: [0, 100] }} className={styles.sticker2}>
+            <Image src={ghost2} alt="ghost" width={70} />
+          </motion.div>
+          <motion.div animate={{ rotate: [0, 100] }} className={styles.sticker3}>
+            <Image src={ghost3} alt="ghost" width={70} />
+          </motion.div>
         </motion.div>
         <motion.div
           className={styles.circle}

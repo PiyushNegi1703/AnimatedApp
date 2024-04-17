@@ -5,6 +5,7 @@ import ExplainSection from "@/components/ExplainSection";
 import HeroSection from "@/components/HeroSection";
 import MeetAhead from "@/components/MeetAhead";
 import Navbar from "@/components/Navbar";
+import OpenVacancies from "@/components/OpenVacancies";
 import SelfImprovement from "@/components/SelfImprovement";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <MeetAhead />
       <SelfImprovement />
       <ExplainSection />
+      <OpenVacancies />
     </main>
   );
 }
